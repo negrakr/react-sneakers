@@ -30,14 +30,14 @@ function Home({
       <div className="title-search">
         <h1>{searchValue ? `Поиск по запросу: "${searchValue}"` : 'Все кроссовки'}</h1>
         <div className="search-block">
-          <img src="/img/search.svg" alt="search" />
+          <img src="img/search.svg" alt="search" />
           <input onChange={onChangeSearchInput} value={searchValue} placeholder="Поиск..." />
           {
             searchValue &&
             <img
               onClick={() => setSearchValue('')}
               className={styles.cartItemRemove}
-              src="/img/btn-remove.svg"
+              src="img/btn-remove.svg"
               alt="clear"
             />
           }
